@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home_Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=0">
+    <meta name="HandheldFriendly" content="true">
+    <link rel = "icon" type = "image/png" href = "https://drive.google.com/uc?export=download&id=1QEriajNDEIfb6Ml9OhCb_adx7God2uNz" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="http://www.slidesjs.com/examples/basic-fade/js/jquery.slides.min.js"></script>
+    <!-- End SlidesJS Required -->
+
+    <style>
+
+
+        img
+        {
+            position: relative;
+            width:100%;
+        }
+
+
+
+        body {
+
+            font-family: 'segoe ui';
+            left:auto;
+            width:100%;
+
+
+
+        }
+
+        @media screen and (min-width: 1068px) {
+            body {
+
+                left:auto;
+                width:100%;
+
+
+            }
+        }
+        @media screen and (min-width: 950px) {
+            body {
+
+                left:auto;
+                width:100%;
+
+            }
+        }
+        @media screen and (min-width: 760px) {
+            body {
+
+                left:auto;
+                width:100%;
+
+            }
+        }
+        @media screen and (min-width: 600px) {
+            body {
+
+                left:auto;
+                width:100%;
+
+            }
+        }
+        @media screen and (min-width: 480px) {
+            body {
+
+                left:auto;
+                width:100%;
+
+            }
+        }
+        @media screen and (min-width: 280px) {
+            body {
+
+                left:auto;
+                width:100%;
+
+            }
+        }
+        @media screen and (min-width: 200px) {
+            body {
+
+                left:auto;
+                width:100%;
+
+            }
+        }
+        html {
+            overflow-x: hidden;
+        }
+        .carousel-indicators {
+            left:auto;
+            right:20px;
+            margin-right:0;
+            width:auto;
+        }
+        .-fx-image-gal {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 960px;
+            justify-content: center;
+        }
+        .-fx-gal-item {
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .-fx-gal-item a {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 120px;
+            background-color: white;
+        }
+
+        .-fx-gal-image-thumb img {
+            width: 100%;
+            cursor: pointer;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            filter: grayscale(100%);
+            transform: scale(1.1);
+            transition: all 0.5s ease;
+            height: 150px;
+
+        }
+
+        .carousel-indicators {
+            left:auto;
+            right:20px;
+            margin-right:0;
+            width:auto;
+        }
+
+        .-fx-gal-image-thumb:hover img {
+            cursor: pointer;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            filter: grayscale(0%);
+            transform: scale(1.5);
+            transition: all 0.5s ease;
+        }
+        @media (min-width: 420px) {
+            .-fx-image-gal {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .-fx-gal-item {
+                width: 50%;
+            }
+        }
+        @media (min-width: 768px) {
+            .-fx-gal-item {
+                width: 33.33%;
+            }
+        }
+
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .site-footer {
+            margin-top: 15px;
+            position: relative;
+            background-color:#1A1F24;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .site-footer .container {
+            max-width: 85%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .site-footer .container h1 {
+            font-size: 40px;
+        }
+
+        .site-footer .container h2 {
+            font-size: 40px;
+            float: right;
+        }
+
+        .site-footer .grid-container a {
+            color: #A2845C;
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 16.25px;
+        }
+
+        .site-footer .grid-item {
+            padding: 10px;
+            color: #A2845C;
+        }
+
+
+        .site-footer .grid-container .inner-grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            text-align: left;
+        }
+
+        .site-footer .container hr {
+            display: block;
+            height: 1px;
+            border: 0; border-top: 1px solid #A2845C;
+            margin: 1px;
+            padding: 0;
+        }
+
+        .site-footer .container p {
+            font-size: 14px;
+            text-align: right;
+            color: #A2845C;
+            font-weight: 500;
+        }
+
+        .site-footer .container .logo-img {
+            width: 180px;
+            height: 140px;
+            cursor: pointer;
+        }
+
+
+        .site-footer .grid-container .grid-item .social-buttons a {
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 30px;
+            width: 60px;
+            height: 60px;
+            color: #1A1F24;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 8px;
+        }
+
+
+        .site-footer .grid-container .grid-item .social-buttons a i{
+            transition: 0.3s ease-in;
+        }
+
+        .site-footer .grid-container .grid-item .social-buttons a:hover i {
+            background: linear-gradient(45deg,#A2845C,#A2845C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(1.5);
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+            .site-footer {
+                height: 620px;
+                bottom: 0;
+            }
+
+            .site-footer .grid-container {
+                display: grid;
+                grid-template-columns: 400px;
+            }
+
+            .site-footer .grid-container .inner-grid-container {
+                display: grid;
+                grid-template-columns: auto auto ;
+                text-align: left;
+            }
+
+
+        }
+
+        @media only screen and (min-width: 992px) {
+
+            .site-footer {
+                height: 260px;
+                bottom: 0;
+            }
+
+            .site-footer .grid-container {
+                display: grid;
+                grid-template-columns: 350px auto 350px;
+            }
+
+            .site-footer .grid-container .inner-grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                text-align: left;
+            }
+
+        }
+
+        .featurette-divider {
+            margin: 5rem 0;
+        }
+
+
+        @media (min-width: 40em) {
+
+            .carousel-caption p {
+                margin-bottom: 1.25rem;
+                margin-left: 1rem;
+                font-size: 1.25rem;
+                line-height: 1.4;
+            }
+
+        }
+
+        @media (min-width: 62em) {
+        }
+
+
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+
+        .img-list ol,
+        .img-list ul {
+            list-style:none;
+        }
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Welcome To Our Family</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pragatishil_home_page.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/pragatishilcgecians2019">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pragatishil_register.html">Register</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<img src="https://drive.google.com/uc?export=download&id=15bwGIKTzElpYKoyxwsSwSbKz6Admxgpk" style="width:100%; height: 400px; position: relative;">
+<br><br>
+<div class="card text-center">
+    <div class="card-header">
+        <b><h2>Pragatishil CGECians</h2></b>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">About Us</h5>
+        <p class="card-text">প্রগতিশীল CGECians পরিবারে সকলকে সাদর আমন্ত্রণ। ২০১৯ সালের ৫ই সেপ্টেম্বর; বিশেষ এই দিনটিকে উদ্দেশ্য করে কোচবিহার গভর্নমেন্ট ইঞ্জিনিয়ারিং কলেজের কিছু ছাত্রছাত্রীর হাতে ধরে এবং পরবর্তীতে এই প্রতিষ্ঠানের কয়েকজন সন্মানীয় অধ্যাপকদের গুণগ্রহন এবং উৎসাহ প্রদানে গড়ে ওঠে প্রগতিশীল CGECians। প্রগতিশীল CGECians-র মূল লক্ষ্য ছাত্রছাত্রীদের অগ্রগতি, দক্ষতার বিকাশ, পাঠক্রম বহির্ভূত কিছু কার্যক্রমে অংশগ্রহণ করানোর মাধ্যমে উৎসাহ প্রদান এবং প্রতিষ্ঠানের কিছু সাংস্কৃতিক ও প্রযুক্তিগত ক্লাবের সাথে সংযুক্ত থেকে সংহতি গঠন করা। আমাদের প্রিয় প্রতিষ্ঠানের সামগ্রিক উন্নয়নে প্রগতিশীল CGECians পরিবার সর্বদা কর্তব্যপরায়ণ।<br>
+            <br><br>
+            A Cordial Welcome To The Pragatishil CGECians Family.  September 5, 2019; Aiming On This Special Day, Pragatishil CGECians Was Formed By The Hands Of Some Students Of Coochbehar Government Engineering College And Later By The Appreciation And Encouragement Of Some Honorable Professors Of This Institution. The Main Goals Of Pragatishil CGECians Are Advancement , Skill Development Of The Students , To Provide Encouragement To The Students By The Participation In Some Extracurricular Activities And To Build A Solidarity By Associating With Some Cultural And Technical Clubs Of This Institution. Pragatishil CGECians Family Is Always Obedient For The Overall Development Of Our Endeared Institution.</p>
+        <a href="https://www.facebook.com/pragatishilcgecians2019" class="btn btn-primary">Our Facebook Page</a>
+    </div>
+    <div class="card-footer text-muted">
+
+    </div>
+</div>
+<br><br>
+<span><b><h1 style="text-align: center;">Our Founding Members </h1></b></span><br>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <div class="card">
+            <img src="https://drive.google.com/uc?export=download&id=1GtwcBwFKPlv-5loZv11u6QX1JJdJtNsO" class="card-img-top" alt="" style="height: 300px;">
+            <div class="card-body">
+                <h5 class="card-title">Gopal Ghosh , CE , Batch - 2020</h5>
+                <p class="card-text">জ্ঞানশক্তি ও তারুণ্য এই দুই শক্তির সমন্বয়ে ছাত্র সমাজ দেশ ও জাতি গঠনে গুরুত্বপূর্ণ অবদান রাখতে পারে। আজকের ছাত্ররাই জাতির সম্ভাবনাময় প্রজন্ম। জাতির স্বপ্নময় ভবিষ্যতের কান্ডারী। এমনি সব ছাত্র-ছাত্রীর সমন্বয় আমাদের "প্রগতিশীল CGECIAN"। ছাত্রসমাজ মানেই সংঘবদ্ধ একটা শক্তি; "প্রগতিশীল CGECIAN" ও সকল ছাত্র-ছাত্রীর সংঘবদ্ধ হওয়ার একটা মঞ্চ। এই মঞ্চ সংস্কৃতি বিষয়ক বিভিন্ন শিল্পকলার শাখা সংগঠনে বিন্যস্ত হয়ে সকল ছাত্রছাত্রীকে একত্রিত করছে। সেই একত্রিত মঞ্চ সমাজের সকল অনৈতিক, ন্যায়বিরুদ্ধ ও স্বৈরাচারের বিরুদ্ধে আওয়াজ হয়ে উঠবে এবং নিজস্ব ক্যাম্পাসে কোনরকম দুর্নীতি ও আদর্শহীনতার প্রতিবাদী মুখ হয়ে উঠবে। ছাত্র-ছাত্রীদের সকল দাবী, পড়াশোনার মান থেকে ক্যাম্পাসিং পর্যন্ত সকল লড়াইয়ে সহযোদ্ধা হয়ে কাঁধে কাঁধ মিলিয়ে লড়বে "প্রগতিশীল CGECIAN"। পুঁথিগত বিদ্যার বাইরেও সাংস্কৃতিক শিল্পকলায় কলেজের মান বাড়িয়ে তোলা এবং জাতি-ধর্ম-বর্ণ নির্বিশেষে আমাদের কোচবিহার গভর্নমেন্ট ইঞ্জিনিয়ারিং কলেজে দুর্নীতিমুক্ত রেখে একটি আদর্শ ক্যাম্পাস প্রতিস্থাপন করাই "প্রগতিশীল CGECIAN" এর মূল লক্ষ্য।</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="https://drive.google.com/uc?export=download&id=1ua9VqEmnbjRzJd8h8oCINBW0yjWEDvHt" class="card-img-top" alt="..." style="height:300px;">
+            <div class="card-body">
+                <h5 class="card-title">Anish Ali Sha , CE , Batch - 2021</h5>
+                <p class="card-text">আজকে যে যুব , কালকে সে দেশের ভবিষ্যৎ । ধীরে ধীরে আমারা যেভাবে আধুনিকতার প্রলোভনে জড়িয়ে যাচ্ছি , ঠিক সেভাবেই আমরা আমাদের সমাজ-সংস্কৃতি-ভাষার মর্যাদা করতে ভুলে যাচ্ছি । এই প্রগতিশীল CGECian সেইসব কিছু ছাত্রছাত্রীদের সমষ্টি তারা এসব সমস্যা নিয়ে চিন্তিত । আমাদের একটাই লক্ষ্য , জাতি-ধর্ম-বর্ন-বর্গ নির্বিশেষে কোচবিহার গভর্নমেন্ট ইঞ্জিনিয়ারিং কলেজের ছাত্র সমাজকে বাঙালি সমাজ , বাঙালি সংস্কৃতি এবং বাংলা ভাষা চর্চার মাধ্যমে আরো উন্নত জায়গায় নিয়ে যাওয়া । তার সাথে সাথে ছাত্র সমাজের আন্দোলনকে আরও এক স্তর উঁচুতে নিয়ে যাওয়া । Make Bengal Great Again !</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="https://drive.google.com/uc?export=download&id=11rFcD2e0ETBdAShtXCcmxqaAf09fj6Oe" class="card-img-top" alt="" style="height: 300px;">
+            <div class="card-body">
+                <h5 class="card-title">Partha Dutta , CE , Batch - 2021</h5>
+                <p class="card-text">Education, determination, social duty is one of the principles of every student, we know that the student society is the main backbone of the progress of civilization, and the "Pragatishil CGECIAN"is a significant part of that student society. The contribution of every student in the emergence of this student body, which was gradually formed in Coochbehar Government Engineering College is undeniable. From the first year to the fourth year,for every student "Pragatishil CGECIAN" has gained an important place to direct various initiatives and also to express everybody's cultural enthusiasm on behalf of our 2nd home Cgec which is eager to fulfill the knowledge in every aspect of our college education as well as cultural, social from the beginning. Moreover "PragatishilCGECians" is constantly trying to work as every student's mouthpiece and also to uphold our college with more prominant technique.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="https://drive.google.com/uc?export=download&id=1VteaH35AEu777B7Yx9DnzOu47G3LmGve" class="card-img-top" alt="..." style="height:300px;">
+            <div class="card-body">
+                <h5 class="card-title">Tapasree Kait , ECE , Batch - 2022</h5>
+                <p class="card-text">" ..... শত শত সাম্রাজ্যের ভগ্নশেষ 'পরে
+                    ওরা কাজ করে । "
+                    এই স্তোত্র থেকেই যদি শুরু হয়, তাহলে উল্লেখ করতে হবে পৃথিবীর প্রতিটি প্রান্তের ভিন্ন ভিন্ন আলোড়নের সাথে ওতপ্রোতভাবে জড়িয়ে থাকা নুতন যৌবনের যোগদানের প্রবাহমানতা। যুগে যুগে বিধ্বংসী বহ্নিশিখা এক একটা সভ্যতা ক্ষতবিক্ষত করে চলে গিয়েছে , তবুও যুবশক্তির উত্থান, তাদের সমন্বয়সাধন এবং অগ্রগতি অপ্রতিরোধ্য ছিল। নবীন প্রজন্ম সভ্যতাকে চতুর্দিক থেকে উন্তততর পর্যায়ে নিয়ে যেতে সক্ষম হয়েছে; কখনো প্রযুক্তিগত জ্ঞান আহরণ করে, কখনো বা জীববিজ্ঞানের ধারা বেয়ে, কখনো সাহিত্য ও সংস্কৃতিকে সমৃদ্ধ করে, আবার কখনো মানবকল্যাণে নিয়োজিত হয়ে তারা সমাজের প্রত্যেক স্তরে নতুন সুষমতার সঞ্চার ঘটিয়েছে এবং তার পরিপ্রেক্ষিতে সমাজবিরোধী, আদর্শহীন মনোভাব প্রতিহত করা সহনসাধ্য হয়েছে। আমাদের ভালোবাসার শিক্ষা প্রতিষ্ঠানে কিছু একনিষ্ঠ ছাত্র-ছাত্রীদের একত্রিত হয়ে কুসংস্কার এবং অস্পৃশ্যতা থেকে মুক্ত সুস্থ, স্বাভাবিক, পরিপূর্ণ এবং সচেতন ছাত্রসমাজ গঠন করার লক্ষ্যে অংশবিশেষ প্রগতিশীল CGECians পরিবার। আশাকরি পরবর্তীতে ছাত্র-ছাত্রীদের সমাগম এই পরিবারের ছত্রছায়ায় উদয়ের পথ আর‌ও সুগম করে আমাদের প্রিয় প্রতিষ্ঠানকে আর‌ও সমৃদ্ধ করবে এবং বহুক্ষেত্রে যুবসমাজকে শক্তিশালী করে তুলবে।</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<hr class="featurette-divider">
+
+<span><b><h1 style="text-align: center;"> Our Associated Clubs & Groups </h1></b></span><br>
+<div class="-fx-image-gal">
+    <div class="-fx-gal-item">
+        <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="arietta_home_page.html" target="_blank">
+                <img src="https://drive.google.com/uc?export=download&id=1PdSkLFT_ZoJikrCt8UY3FwKiZi9F16mX" />
+            </a>
+        </div>
+    </div><br>
+
+    <div class="-fx-gal-item">
+        <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="peptalks_club.html" target="_blank">
+                <img src="https://drive.google.com/uc?export=download&id=11904Fd0yPslLr-m0b910A7IEj2T8jAuT" />
+            </a>
+        </div>
+    </div><br>
+
+    <div class="-fx-gal-item">
+        <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="debate_club.html" target="_blank">
+                <img src="https://drive.google.com/uc?export=download&id=15tkvDLYi0Zh6z-pfWybmxpU6XB0pu0Zo" />
+            </a>
+        </div>
+    </div><br>
+
+    <div class="-fx-gal-item">
+        <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="literarry_club.html" target="_blank">
+                <img src="https://drive.google.com/uc?export=download&id=1-3xNdQV0tGBdb5l4iERE5EfnE3rmlFRq" />
+            </a>
+        </div>
+    </div><br>
+    <div class="-fx-gal-item">
+        <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="rongmilanti_club.html" target="_blank">
+                <img src="https://drive.google.com/uc?export=download&id=1-aAsW0RqfYv1sDzpUb2uM_Z5yB_Ogxun" />
+            </a>
+        </div>
+    </div><br>
+    <div class="-fx-gal-item">
+        <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="tech_o_nics_club.html" target="_blank">
+                <img src="https://drive.google.com/uc?export=download&id=1j9OHexgWOxwebG8nhVNdKk1NHJsUqiyl" />
+            </a>
+        </div>
+    </div><br>
+
+    <div class="-fx-gal-item">
+        <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="pratibimba_club.html" target="_blank">
+                <img src="https://drive.google.com/uc?export=download&id=1jOPUT_1tSHjtbKsIWLtN6HetRTpC-FRW" />
+            </a>
+        </div>
+    </div><br><br><br><br>
+
+</div>
+
+<span><b><h1 style="text-align: center;"> Notice </h1></b></span><br><br>
+<div class="card-group">
+    <div class="card mx-1">
+        <img src="https://drive.google.com/uc?export=download&id=14q6aQNKwqqBiQdavOlasY3gczm40y_R_" class="card-img-top" alt="...">
+        <div class="card-body">
+            <a href="https://www.facebook.com/102695071355984/posts/104122947879863/?sfnsn=wiwspwa" style="text-decoration: none;"><h5 class="card-title">Campaign In Support Of "Global Climate Strike"</h5></a>
+            <p class="card-text">This was a campaign which was held in our college by pragatishilCGECIans in the year of 2019.</p>
+
+        </div>
+    </div>
+    <div class="card mx-1">
+        <img src="https://drive.google.com/uc?export=download&id=14q6aQNKwqqBiQdavOlasY3gczm40y_R_" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">"International Women's Day" Observation</h5>
+            <p class="card-text"> In 2020  we clebrated womens day in our campus.</p>
+
+        </div>
+    </div>
+    <div class="card mx-1">
+        <img src="https://drive.google.com/uc?export=download&id=14q6aQNKwqqBiQdavOlasY3gczm40y_R_" class="card-img-top" alt="...">
+        <div class="card-body">
+            <a href="https://fb.watch/5RBaIxjyft/" style="text-decoration: none;"><h5 class="card-title">Online Cultural Expedition</h5></a>
+            <p class="card-text">In the year 2020 we organised this virtual programme on Facebook.</p>
+        </div>
+    </div>
+    <div class="card mx-1">
+        <img src="https://drive.google.com/uc?export=download&id=14q6aQNKwqqBiQdavOlasY3gczm40y_R_" class="card-img-top" alt="https://drive.google.com/uc?export=download&id=14q6aQNKwqqBiQdavOlasY3gczm40y_R_">
+        <div class="card-body">
+            <a href="https://www.facebook.com/pragatishilcgecians2019" style="text-decoration: none;"><h5 class="card-title">Others Activities On Social Platforms</h5></a>
+            <p class="card-text"> Check out the other activities on Facebook.</p>
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+<span><b><h1 style="text-align: center;"> Gallery </h1></b></span><br><br>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://drive.google.com/uc?export=download&id=14q6aQNKwqqBiQdavOlasY3gczm40y_R_" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://drive.google.com/uc?export=download&id=15H_Ox583PCSDe97MPh_T4y_baCo8hPZB" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://drive.google.com/uc?export=download&id=16jQ2qMppwLDlQylRbqEBGGfRUtfV9S4_" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://drive.google.com/uc?export=download&id=15Mf8V2uV8CJQstdKFVeEHAL7JRdQHnsZ" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://drive.google.com/uc?export=download&id=15J0PxukDS3_Ssojhqp7uE1AUjI_sRLQS" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+    <footer class="site-footer">
+        <div class = "container">
+
+            <div class="grid-container">
+                <div class="grid-item">
+
+                    <img src = " https://drive.google.com/uc?export=download&id=14q6aQNKwqqBiQdavOlasY3gczm40y_R_" class = "logo-img">
+
+                </div>
+
+                <div class="grid-item inner-grid-container">
+
+                    <div class="grid-item"><a href="pragatishil_home_page.html">About Us</a></div>
+                    <div class="grid-item"><a href="http://makautexam.net/">MAKAUT</a></div>
+                    <div class="grid-item"><a href="http://cgec.org.in/">CGEC</a></div>
+                    <div class="grid-item"><a href="arietta_home_page.html">Arietta</a></div>
+                    <div class="grid-item"><a href="peptalks_club.html">Pep Talks</a></div>
+                    <div class="grid-item"><a href="pratibimba_club.html">Pratibimba</a></div>
+                    <div class="grid-item"><a href="literarry_club.html">Creative Pens</a></div>
+                    <div class="grid-item"><a href="debate_club.html">Debate Club</a></div>
+                    <div class="grid-item"><a href="tech_o_nics_club.html">Techonics</a></div>
+                    <div class="grid-item"><a href="rongmilanti_club.html">Rongmilanti</a></div>
+
+
+                </div>
+
+            </div>
+            <hr>
+
+            <p>Copyright © 2021 | PragatishilCGECians | CGEC | PragatishilCGECians All rights reserved</p>
+
+        </div>
+    </footer>
+</div>
+</body>
+</html>
